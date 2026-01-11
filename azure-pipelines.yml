@@ -1,0 +1,9 @@
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- script: python hello.py
+  displayName: 'Run Hello World from GitHub'
