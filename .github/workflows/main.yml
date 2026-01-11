@@ -1,0 +1,18 @@
+name: My First Pipeline
+
+on: [push] # ירוץ בכל פעם שתעשי Push מה-VS Code
+
+jobs:
+  run-hello-world:
+    runs-on: ubuntu-latest # שרת חינמי של גיטהאב
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3 # מושך את הקוד שלך לשרת
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Run script
+        run: python hello.py # הפקודה שמריצה את הקובץ שלך!
