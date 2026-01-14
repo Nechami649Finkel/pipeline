@@ -5,10 +5,8 @@
 
 trigger:
 - nano
-
 pool:
   name: 'my-agent-pool'
-
 stages:
   - stage: stage1
     jobs:
