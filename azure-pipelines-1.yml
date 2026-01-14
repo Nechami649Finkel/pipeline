@@ -8,7 +8,7 @@ pool:
   
 
 stages:
-- stage: one stage
+- stage: onestage
   jobs:
   - job: onejob
     steps:
