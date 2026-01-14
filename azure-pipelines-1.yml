@@ -1,7 +1,7 @@
 trigger:
 - nano
 pool:
-  vmImage: 'my-agent-pool'
+  name: 'my-agent-pool'
 stages:
 - stage: onestage
   jobs:
