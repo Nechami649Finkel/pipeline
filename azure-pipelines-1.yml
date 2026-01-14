@@ -1,17 +1,12 @@
-
-
 trigger:
 - nano
-
 pool:
   vmImage: 'my-agent-pool'
-  
-
 stages:
 - stage: onestage
   jobs:
   - job: onejob
     steps:
-    - script: "Hello from my first pipeline!"
+    - script: echo Hello from my first pipeline!
 
       
